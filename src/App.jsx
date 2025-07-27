@@ -8,7 +8,7 @@ function App() {
   const { isPreviewMode } = useFormStore();
 
   return (
-    <div className="App">
+    <div className="App container-responsive">
       {isPreviewMode ? <FormPreview /> : <FormBuilder />}
     </div>
   );

@@ -45,7 +45,7 @@ const FieldItem = ({ field, index }) => {
   return (
     <div
       className={`
-        relative p-4 border-2 rounded-lg cursor-pointer transition-all duration-200 hover:scale-[1.01] bg-white
+        relative p-3 md:p-4 border-2 rounded-lg cursor-pointer transition-all duration-200 hover:scale-[1.01] bg-white
         ${isSelected 
           ? 'border-blue-500 bg-blue-50 shadow-lg ring-2 ring-blue-200' 
           : 'border-gray-200 hover:border-blue-300 hover:shadow-md'

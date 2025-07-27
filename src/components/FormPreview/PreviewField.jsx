@@ -19,7 +19,7 @@ const PreviewField = ({ field, values }) => {
       id: field.id,
       name: field.id,
       placeholder: field.placeholder,
-      className: "w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+      className: "w-full px-3 py-2 text-sm md:text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
     };
 
     switch (field.type) {
@@ -141,7 +141,7 @@ const PreviewField = ({ field, values }) => {
     <div
       className="space-y-2 fade-in"
     >
-      <label htmlFor={field.id} className="block text-sm font-medium text-gray-700">
+      <label htmlFor={field.id} className="block text-sm md:text-base font-medium text-gray-700">
         {field.label}
         {field.required && <span className="text-red-500 ml-1">*</span>}
       </label>
@@ -151,7 +151,7 @@ const PreviewField = ({ field, values }) => {
       <ErrorMessage
         name={field.id}
         component="div"
-        className="text-red-600 text-sm"
+        className="text-red-600 text-xs md:text-sm"
       />
     </div>
   );
